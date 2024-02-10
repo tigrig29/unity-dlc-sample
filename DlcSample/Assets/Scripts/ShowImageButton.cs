@@ -23,8 +23,12 @@ public class ShowImageButton : MonoBehaviour
 
         await Task.Delay(500);
 
-        var dlcSprite = await LoadSprite("Assets/DlcResources/dlc-image.png");
-        _image.sprite = dlcSprite;
+        var dlcSettings = await LoadDlcSettings("Assets/DlcResources/dlc-settings.json");
+        if (dlcSettings.enabled)
+        {
+            var dlcSprite = await LoadSprite("Assets/DlcResources/dlc-image.png");
+            _image.sprite = dlcSprite;
+        }
     }
 
     private async Task<Sprite> LoadSprite(string address)
@@ -32,5 +36,12 @@ public class ShowImageButton : MonoBehaviour
         var handle = Addressables.LoadAssetAsync<Sprite>(address);
         await handle.Task;
         return handle.Result;
+    }
+
+    private async Task<DlcSettings> LoadDlcSettings(string address)
+    {
+        var handle = Addressables.LoadAssetAsync<TextAsset>(address);
+        await handle.Task;
+        return JsonUtility.FromJson<DlcSettings>(handle.Result.ToString());
     }
 }
