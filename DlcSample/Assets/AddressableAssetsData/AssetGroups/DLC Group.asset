@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: DLC Group
   m_EditorClassIdentifier: 
-  m_GroupName: Dlc Group
+  m_GroupName: DLC Group
   m_Data:
     m_SerializedData: []
   m_GUID: b73125dccb4753b429689b9157e37975
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 7dc52c23c734d5940b2f2b55a0279d1f
+    m_Address: Assets/DlcResources
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4fa6660be158d0b4891a931a31c2cc2d, type: 2}
   m_SchemaSet:
