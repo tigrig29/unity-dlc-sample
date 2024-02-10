@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     Hash: 0ec754844470f65bf1f50c4737c1d447
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -35,10 +35,10 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 88195bd83f2b00141816b8f8d7f01476
   m_RemoteCatalogLoadPath:
-    m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+    m_Id: 01a7671d279e62740a02367ed1b96945
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
       - m_Id: 88195bd83f2b00141816b8f8d7f01476
         m_Value: ServerData/[BuildTarget]
       - m_Id: 01a7671d279e62740a02367ed1b96945
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: DlcBundles/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: f077d8e4604ee6546a63b1e6e48e4c78
       m_Name: BuildTarget
