@@ -20,6 +20,11 @@ public class ShowImageButton : MonoBehaviour
     {
         var sprite = await LoadSprite("Assets/DefaultResources/default-image.png");
         _image.sprite = sprite;
+
+        await Task.Delay(500);
+
+        var dlcSprite = await LoadSprite("Assets/DlcResources/dlc-image.png");
+        _image.sprite = dlcSprite;
     }
 
     private async Task<Sprite> LoadSprite(string address)
