@@ -1,3 +1,3 @@
 # unity-dlc-sample
 
-todo: あとで Zenn 記事 URL 書く
+[【Unity/Addressables】DLC頒布するための実装方法サンプル](https://zenn.dev/tigrig/articles/dfca34b4d307b9)
